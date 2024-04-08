@@ -1,0 +1,2 @@
+# TEAM2-MOAMOA-FRONTEND
+TEAM2 MOAMOA 프론트엔드 임시 레포입니다
