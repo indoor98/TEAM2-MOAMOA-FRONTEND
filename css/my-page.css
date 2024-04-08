@@ -1,0 +1,110 @@
+  html, body {
+    height: 100%; /* html, body 요소의 높이를 화면 전체 높이로 설정 */
+    margin: 0; /* 기본 마진 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* 화면 전체 높이로 설정 */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    background-color: #498C74;;
+    color: #fff;
+  }
+  
+  .logo {
+    flex-grow: 1;
+    padding:40px;
+    font-size:30px;
+  }
+  
+  .search-box {
+    flex-grow: 3;
+    text-align: center;
+    position: relative;
+    padding:40px;
+  }
+
+  .search-box input[type="text"] {
+    padding: 10px; /* 입력창 내부 패딩 추가 */
+    border-radius: 20px; /* 입력창을 둥글게 만듦 */
+    border: 1px solid #ccc; /* 테두리 추가 */
+    width: 70%; /* 입력창 너비 지정 */
+  }
+  
+  .notification {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    width: 100%;
+    flex-grow: 1; /* 부모 높이에 맞게 확장 */
+    height:150%;
+  }
+  
+  .left-content {
+    flex: 30%;
+    background-color: white;
+    text-align: center;
+    height: 100%; /* 부모 요소의 높이를 상속받아 확장 */
+    justify-content: center;
+  }
+  
+  .right-content {
+    flex: 70%;
+    background-color: white;
+    height: 80%; /* 부모 요소의 높이를 상속받아 확장 */
+    border: solid black 1px;
+    margin:40px;
+    text-align:center;
+    justify-content:center;
+
+  }
+
+  /* 왼쪽 컨텐츠 아이템들의 스타일링 */
+  .left-content div {
+    margin-bottom: 10px; /* 각 요소들 사이의 간격 조정 */
+    margin-top:10px;
+  }
+
+  .left-content button {
+    padding: 5px 10px; /* 버튼 내부 패딩 조정 */
+    border: none; /* 테두리 제거 */
+    background-color: #4CAF50; /* 배경색 설정 */
+    color: white; /* 텍스트 색상 설정 */
+    border-radius: 5px; /* 둥근 모서리 설정 */
+    cursor: pointer; /* 마우스 커서 모양 변경 */
+  }
+
+  .left-content button:hover {
+    background-color: #45a049; /* 마우스 호버시 배경색 변경 */
+  }
+
+  /* 사진 스타일링 */
+  .left-content img {
+    width: 200px; /* 사진의 너비 지정 */
+    height: 200px; /* 사진의 높이 지정 */
+    border-radius: 50%; /* 원 모양으로 만들기 */
+    object-fit: cover; /* 사진의 비율 유지하며 자르기 */
+    margin-bottom: 5px; /* 사진 아래 간격 조정 */
+    margin-top:50px;
+  }
+
+  .right-content div {
+    border: solid 1px;
+    margin: 50px;
+    height:30%;
+  }
