@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-button a {
+    font-size: 50px;
+    color: #013f29;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    display: flex;
+    gap: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.left-column {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.right-column {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.event-description {
+    font-size: 2em;
+    margin-bottom: 8px;
+}
+
+.hashtags button {
+    border: none;
+    padding: 4px 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: none;
+}
+
+.img-style img {
+    width: 550px;
+    height: auto;
+    margin: 16px;
+    border-radius: 4px;
+}
+
+.date-counter {
+    letter-spacing: 10px;
+    color: red;
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 400px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.participation-info .participants,
+.participation-info .amount-raised {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.participants {
+    color: #5d9883;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.amount-raised {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.participate-button {
+    background-color: #458971;
+    height: 60px;
+    width: 180px;
+    color: white;
+    font-size: 2em;
+    border-radius: 15px;
+    box-shadow: 123px gray;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+.social-buttons {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.btn-svg {
+    border: 1px solid black;
+    background: none;
+    padding: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.btn-svg img {
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.bottom-column {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-section textarea {
+    width: 100%;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.comment-section .comment-button {
+    padding: 10px 20px;
+    background-color: #458971;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+}
